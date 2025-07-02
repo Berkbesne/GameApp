@@ -1,12 +1,45 @@
-# React + Vite
+# GameApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, oyunlar hakkında bilgi sunan bir React tabanlı web uygulamasıdır.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Oyun listesi görüntüleme
+- Oyun detaylarını inceleme
+- API ile veri çekme
 
-## Expanding the ESLint configuration
+## Kurulum
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/Berkbesne/GameApp.git
+   ```
+2. Proje dizinine gidin:
+   ```bash
+   cd GameApp
+   ```
+3. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+4. Ortam değişkenlerini ayarlayın:
+   - Proje kök dizininde bir `.env` dosyası oluşturun ve aşağıdaki değişkenleri ekleyin:
+     ```
+     VITE_API_URL=API_adresinizi_buraya_yazın
+     VITE_API_KEY=API_anahtarınızı_buraya_yazın
+     ```
+   - `VITE_API_URL`: Uygulamanın oyun verilerini çekeceği API adresidir.
+   - `VITE_API_KEY`: API'ya erişim için gerekli anahtardır. (Gizli tutmalısınız!)
+
+5. Uygulamayı başlatın:
+   ```bash
+   npm start
+   ```
+
+## Katkıda Bulunma
+
+Katkıda bulunmak için lütfen bir fork oluşturun ve pull request gönderin.
+
+## Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
